@@ -1,0 +1,273 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "comment_count": 0,
+            "creator": 34402629,
+            "label_ids": [],
+            "created": "2021-07-28T06:00:05Z",
+            "assigner": 0,
+            "description": "",
+            "completed": false,
+            "priority": 4,
+            "content": "Buy Milk",
+            "url": "https://todoist.com/showTask?id=5025010522",
+            "section_id": 0,
+            "project_id": 2267976326,
+            "due": {
+                "date": "2021-07-29",
+                "datetime": "2021-07-29T06:30:00Z",
+                "string": "tomorrow at 12:00",
+                "recurring": false,
+                "timezone": "Asia/Kolkata"
+            },
+            "id": 5025010522,
+            "order": 5
+        }
+    ],
+    "required": [
+        "comment_count",
+        "creator",
+        "label_ids",
+        "created",
+        "assigner",
+        "description",
+        "completed",
+        "priority",
+        "content",
+        "url",
+        "section_id",
+        "project_id",
+        "due",
+        "id",
+        "order"
+    ],
+    "properties": {
+        "comment_count": {
+            "$id": "#/properties/comment_count",
+            "type": "integer",
+            "title": "The comment_count schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                0
+            ]
+        },
+        "creator": {
+            "$id": "#/properties/creator",
+            "type": "integer",
+            "title": "The creator schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                34402629
+            ]
+        },
+        "label_ids": {
+            "$id": "#/properties/label_ids",
+            "type": "array",
+            "title": "The label_ids schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                []
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/label_ids/items"
+            }
+        },
+        "created": {
+            "$id": "#/properties/created",
+            "type": "string",
+            "title": "The created schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2021-07-28T06:00:05Z"
+            ]
+        },
+        "assigner": {
+            "$id": "#/properties/assigner",
+            "type": "integer",
+            "title": "The assigner schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                0
+            ]
+        },
+        "description": {
+            "$id": "#/properties/description",
+            "type": "string",
+            "title": "The description schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                ""
+            ]
+        },
+        "completed": {
+            "$id": "#/properties/completed",
+            "type": "boolean",
+            "title": "The completed schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                false
+            ]
+        },
+        "priority": {
+            "$id": "#/properties/priority",
+            "type": "integer",
+            "title": "The priority schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                4
+            ]
+        },
+        "content": {
+            "$id": "#/properties/content",
+            "type": "string",
+            "title": "The content schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Buy Milk"
+            ]
+        },
+        "url": {
+            "$id": "#/properties/url",
+            "type": "string",
+            "title": "The url schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "https://todoist.com/showTask?id=5025010522"
+            ]
+        },
+        "section_id": {
+            "$id": "#/properties/section_id",
+            "type": "integer",
+            "title": "The section_id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                0
+            ]
+        },
+        "project_id": {
+            "$id": "#/properties/project_id",
+            "type": "integer",
+            "title": "The project_id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                2267976326
+            ]
+        },
+        "due": {
+            "$id": "#/properties/due",
+            "type": "object",
+            "title": "The due schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "date": "2021-07-29",
+                    "datetime": "2021-07-29T06:30:00Z",
+                    "string": "tomorrow at 12:00",
+                    "recurring": false,
+                    "timezone": "Asia/Kolkata"
+                }
+            ],
+            "required": [
+                "date",
+                "datetime",
+                "string",
+                "recurring",
+                "timezone"
+            ],
+            "properties": {
+                "date": {
+                    "$id": "#/properties/due/properties/date",
+                    "type": "string",
+                    "title": "The date schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "2021-07-29"
+                    ]
+                },
+                "datetime": {
+                    "$id": "#/properties/due/properties/datetime",
+                    "type": "string",
+                    "title": "The datetime schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "2021-07-29T06:30:00Z"
+                    ]
+                },
+                "string": {
+                    "$id": "#/properties/due/properties/string",
+                    "type": "string",
+                    "title": "The string schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "tomorrow at 12:00"
+                    ]
+                },
+                "recurring": {
+                    "$id": "#/properties/due/properties/recurring",
+                    "type": "boolean",
+                    "title": "The recurring schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "timezone": {
+                    "$id": "#/properties/due/properties/timezone",
+                    "type": "string",
+                    "title": "The timezone schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Asia/Kolkata"
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "id": {
+            "$id": "#/properties/id",
+            "type": "integer",
+            "title": "The id schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                5025010522
+            ]
+        },
+        "order": {
+            "$id": "#/properties/order",
+            "type": "integer",
+            "title": "The order schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                5
+            ]
+        }
+    },
+    "additionalProperties": true
+}
